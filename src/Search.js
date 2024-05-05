@@ -15,7 +15,7 @@ export default function Search() {
   }
 
   function callAxios() {
-    const apiKey = "3Q8jVZT959Smky3PiaFSzMegTxXQxyfBbbBQKrhG";
+    //const apiKey = "3Q8jVZT959Smky3PiaFSzMegTxXQxyfBbbBQKrhG";
     let apiUrl = `https://images-api.nasa.gov/search?q=${value}`;
 
     axios.get(apiUrl).then(handleResponse);
