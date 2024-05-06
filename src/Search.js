@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./Search.css";
 
 export default function Search() {
   let [value, setValue] = useState(null);
@@ -21,7 +22,7 @@ export default function Search() {
     axios.get(apiUrl).then(handleResponse);
   }
   return (
-    <div>
+    <div className="Search">
       <h3>What are you looking for?</h3>
       <form onSubmit={handleSubmit}>
         <input type="search" placeholder="Ex. Moon, Apollo 11" />
