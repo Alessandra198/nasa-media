@@ -5,12 +5,21 @@
 }
 
 .App h1 {
-  padding-top: 20px;
+  padding-top: 10px;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.App h2 {
+  font-size: 30px;
+  margin-top: 0;
 }
 
 .App .container {
   max-width: 700px;
   background-color: rgba(19, 67, 148, 1);
   box-shadow: 5px 5px 5px rgba(19, 67, 148, 0.5);
-  margin: 0 auto;
+  margin: 15px auto;
+  padding-bottom: 20px;
+  border-radius: 7px;
 }

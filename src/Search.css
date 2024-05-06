@@ -1,8 +1,21 @@
 .Search h3 {
   color: white;
   text-align: center;
+  font-size: 22px;
+}
+
+.Search form {
+  text-align: center;
 }
 
 .Search form input {
   font-family: "Roboto", sans-serif;
+  padding: 5px 10px 5px 8px;
+  border: none;
+  font-size: 17px;
+  border-radius: 7px;
+}
+
+.Search form .button {
+  margin-left: 3px;
 }
