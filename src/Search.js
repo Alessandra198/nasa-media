@@ -25,7 +25,7 @@ export default function Search() {
     <div className="Search">
       <h3>What are you looking for?</h3>
       <form onSubmit={handleSubmit}>
-        <input type="search" placeholder="Ex. Moon, Apollo 11" />
+        <input type="search" placeholder="Ex. Moon, Apollo 11" className="search"/>
         <input type="submit" value="Submit" className="button"/>
       </form>
     </div>
