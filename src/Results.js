@@ -7,7 +7,7 @@ export default function Results(props) {
       <div className="Results">
         <h6>Here's what we found👩‍🚀👨‍🚀</h6>
         <div>
-          {props.data.maps(function (item, index) {
+          {props.data.items.map(function (item, index) {
             return (
               <div key={index}>
                 <Images item={item} />
