@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Results from "./Results";
 import "./Search.css";
 
 export default function Search() {
   let [value, setValue] = useState(null);
+  let [data, setData] = useState(null);
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -13,6 +15,7 @@ export default function Search() {
 
   function handleResponse(response) {
     console.log(response.data.collection);
+    setData(response.data.collection);
   }
 
   function callAxios() {
@@ -32,6 +35,7 @@ export default function Search() {
         />
         <input type="submit" value="Submit" className="button" />
       </form>
+      <Results data={data} />
     </div>
   );
 }
