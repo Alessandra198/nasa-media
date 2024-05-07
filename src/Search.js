@@ -12,7 +12,7 @@ export default function Search() {
   }
 
   function handleResponse(response) {
-    console.log(response);
+    console.log(response.data.collection);
   }
 
   function callAxios() {
@@ -25,9 +25,20 @@ export default function Search() {
     <div className="Search">
       <h3>What are you looking for?</h3>
       <form onSubmit={handleSubmit}>
-        <input type="search" placeholder="Ex. Moon, Apollo 11" className="search"/>
-        <input type="submit" value="Submit" className="button"/>
+        <input
+          type="search"
+          placeholder="Ex. Moon, Apollo 11"
+          className="search"
+        />
+        <input type="submit" value="Submit" className="button" />
       </form>
     </div>
   );
 }
+
+//data.collection.items - array
+//data.collection.items[].href - image url
+//                       or
+//data.collection.items[].links[0].href - image url
+//data.collection.items[].data[0].description
+//data.collection.items[].data[0].title
