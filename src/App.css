@@ -11,8 +11,8 @@
 }
 
 .App h2 {
-  font-size: 30px;
-  margin-top: 0;
+  font-size: 35px;
+  margin-bottom: 30px;
 }
 
 .App .container {
@@ -20,6 +20,6 @@
   background-color: rgba(19, 67, 148, 1);
   box-shadow: 5px 5px 5px rgba(19, 67, 148, 0.5);
   margin: 15px auto;
-  padding-bottom: 20px;
+  padding: 20px 0 40px 0;
   border-radius: 7px;
 }
