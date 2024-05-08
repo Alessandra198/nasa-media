@@ -14,7 +14,7 @@ export default function Search() {
   }
 
   function handleResponse(response) {
-    console.log(response.data.collection);
+    console.log(response.data);
     setData(response.data.collection);
   }
 
@@ -39,4 +39,3 @@ export default function Search() {
     </div>
   );
 }
-
