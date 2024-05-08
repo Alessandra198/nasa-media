@@ -24,10 +24,3 @@ export default function Images(props) {
     </div>
   );
 }
-
-//data.collection.items - array
-//data.collection.items[].href - image url
-//                       or
-//data.collection.items[].links[0].href - image url
-//data.collection.items[].data[0].description
-//data.collection.items[].data[0].title

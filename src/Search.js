@@ -14,7 +14,6 @@ export default function Search() {
   }
 
   function handleResponse(response) {
-    console.log(response.data);
     setData(response.data.collection);
   }
 
